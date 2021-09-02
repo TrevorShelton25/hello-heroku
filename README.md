@@ -11,41 +11,43 @@
  - [ ] create a new file $: touch index.js
  - [ ] open index.js in vsCode
  - [ ] create an express server (see the ghyt repo for the source code)
- - [ ] edit package.json:
-...
-"scripts": {
--        "test": "echo \"Error: no test specified\" && exit 1"
-+        "test": "echo \"Error: no test specified\" && exit 1",
-+       "start": "node index.js"
-    },
+ - [ ] edit package.json so that it looks like this:
 
-...
- - [ ] create a .gitignore file: $: echo 'node_modules' >> .gitignore (//I think that'll do it, could be wrong)
+
+![image](https://user-images.githubusercontent.com/66640651/131929178-b35b3ec0-14e3-4d1d-b775-10a83a309f52.png)
+
+
+
+
+ - [ ] create a .gitignore file: $: echo 'node_modules' >> .gitignore
 - [ ]  initialize the local git repo: $: git init
- - [ ] head over to https://github.com
- - [ ] sign in (requires an active account)
- - [ ] create a new repo: name it something like: hello-heroku or node-on-heroku or whatever
+ - [ ] head over to https://github.com on your web browser
+ - [ ] sign in
+ - [ ] create a new repo: name it whatever you like.
  - [ ] do not check any defaults, just give it a name and create it.
 - [ ]  follow the steps on the next screen to connect this remote repo to your local git repo
  - [ ] they give you something like this:
-echo "# hello-heroku-or-whatever-you-named-it" >> README.md
+echo "# your heroku file name" >> README.md
 git init
 git add README.md
-git commit -m "first commit"
+git commit -m "whatever you would like to name it"
 git branch -M main
 git remote add origin https://github.com/{YOUR-USER-NAME}/{YOUR-REPO-NAME}.git
 git push -u origin main
 - [ ] but might need to make sure we know what we are doing
-echo "# hello-heroku-or-whatever-you-named-it" >> README.md
+echo "# your heroku file name" >> README.md
 - git init //we already did this
 - git add README.md
 + git add . 
-☝️ add everything, not just the readme
+☝️ adds everything, not just the readme 🥳
 
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/{YOUR-USER-NAME}/{YOUR-REPO-NAME}.git
-git push -u origin main
+>git commit -m "first commit"
+>
+>git branch -M main
+>
+>git remote add origin https://github.com/{YOUR-USER-NAME}/{YOUR-REPO-NAME}.git
+>
+>git push -u origin main
 
 - [ ] nav to heroku
 - [ ] log in
